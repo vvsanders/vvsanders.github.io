@@ -1,0 +1,231 @@
+html {
+	height: 100%;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 12px;
+	min-height: 100%;
+}
+
+
+#page-header {
+	height: 20%;
+	width: 100%;
+	background-color: black;
+	float: left;
+	padding: 2%;
+	border-bottom: 2px solid yellow;
+	box-shadow: 0 0 1px 0 #333;
+}
+
+h1 a {
+	font-family: "Merriweather", sans-serif;
+	float: left;
+	width: 30%;
+	text-decoration: none;
+	color: yellow;
+	font-size: 1.5em;
+}
+
+h2 {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 2%;
+}
+
+h3 {
+	font-family: "Merriweather", serif;
+	font-size: 1.25em
+}
+
+p {
+	font-size: 1em; 
+}
+
+nav {
+	float: right;
+	width: 60%;
+	text-align: right;
+	margin-right: 6%;
+}
+
+#innernav a {
+	text-decoration: none;
+	color: white;
+	padding-left: 4%;
+	font-size: 1em;
+	display: inline-block;
+}
+
+#hamburger {
+	text-decoration: none;
+	display: none;
+	color: white;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+
+
+strong {
+	font-family: "Oswald";
+	text-transform: uppercase;
+	font-size: 1em;
+}
+
+.tagline {
+	clear: both;
+	width: 100%;
+	display: block;
+	background-color: gray;
+	font-family: "Merriweather", serif;
+	font-style: italic;
+	font-size: 1.5em; 
+	text-align: center;
+	padding: 2%;
+}
+
+#taste {
+	text-decoration: line-through;
+}
+
+#are {
+	border-bottom: 2px solid #fffe00;
+}
+
+.banner {
+	width: 100%;
+	height: 266px;
+	background-image: url('../images/coworking.jpg');
+	box-shadow: inset 2px 0 2px #333;
+}
+
+.blurb {
+	float: right;
+	background: rgba(255, 255, 255, 0.8);
+	width: 30%;
+	margin: 3%;
+	padding: 3%;
+	vertical-align: middle;
+	box-shadow: -1px 1px 1px -1px #333;
+}
+
+.callouts {
+	display: inline-block;
+	background-color: #eeeeee;
+	width: 100%;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.callout {
+	float: left;
+	display: block;
+	width: 27%;
+	border-right: 1px solid #cccccc;
+	padding: 3%;
+}
+
+.callout header {
+	padding-bottom: 3%;
+}
+
+.callout3 {
+	float: left;
+	display: block;
+	width: 27%;
+	padding: 3%;
+}
+
+.callout3 header {
+	padding-bottom: 3%;
+}
+
+.wrapper {
+	clear: both;
+	background-color: black;
+	color: white;
+	/*font-size: 1em;*/
+	padding: 40px;
+}
+
+.button {
+	display: block;
+	width: 100%;
+    height: 5%;
+    line-height: 2em;
+    /*font-size: 12px;*/
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: black;
+    border-radius: 5px;
+    background-color: #cccccc;
+    box-shadow: 0 2px 0 0 gray;
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+.banner .button {
+	background-color: #fffe00;
+	box-shadow: 0 2px 0 0 #cecb00;
+}
+
+.button:hover {
+	box-shadow: none;
+	margin-bottom: 3%;
+    margin-top: 6%;
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px) {
+	.blurb {
+		clear: both;
+		float: none;
+		width: 60%;
+		margin: 0 auto;
+	}
+}
+
+@media only screen and (max-width: 640px) {
+	body {
+		text-align: center;
+	}
+	h1 {
+		text-align: left;
+	}
+	.blurb {
+		/*float: none;*/
+		clear: both;
+		width: auto;
+	}
+	#hamburger {
+		display: block;
+	}
+	#innernav {
+		display: none;
+	}
+	#innernav a {
+		clear: both;
+		float: none;
+		width: auto;
+		display: block;
+		text-align: right;
+		font-size: 1.25em;
+		line-height: 2em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+	.callout {
+		clear: both;
+		width: auto;
+		float: none;
+	}
+	.callout3 {
+		clear: both;
+		width: auto;
+		float: none;
+	}
+}
