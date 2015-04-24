@@ -187,6 +187,18 @@ strong {
 		width: 60%;
 		margin: 0 auto;
 	}
+	.callout {
+		clear: both;
+		width: auto;
+		float: none;
+		text-align: center;
+	}
+	.callout3 {
+		clear: both;
+		width: auto;
+		float: none;
+		text-align: center;
+	}
 }
 
 @media only screen and (max-width: 640px) {
@@ -217,15 +229,17 @@ strong {
 		line-height: 2em;
 		margin-top: 1em;
 		margin-bottom: 1em;
+	
 	}
-	.callout {
-		clear: both;
-		width: auto;
-		float: none;
+
+	.callout p {
+		display: none;
 	}
-	.callout3 {
-		clear: both;
-		width: auto;
-		float: none;
+
+	.callout3 p {
+		display: none;
 	}
+/*	.callout3 p {
+		visibility: none;
+	}*/
 }
