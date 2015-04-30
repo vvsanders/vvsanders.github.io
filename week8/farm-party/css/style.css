@@ -1,0 +1,60 @@
+body {
+	background-color: #72DBED;
+	margin: 0 auto;
+	padding: 0; 
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+#grass {
+	background-color: #158C37;
+	height: 40%;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 1;
+}
+
+h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 100px;
+	text-align: center;
+	color: white;
+}
+
+#lamb {
+	position: absolute;
+	bottom: -140%;
+	right: 3%;
+	z-index: 2;
+}
+
+#horse {
+	position: absolute;
+	bottom: -200%;
+	left: 5%;
+	z-index: 3;
+}
+
+#farm {
+	position: absolute;
+	bottom: -200%;
+	right: 20%;
+	z-index: 5;
+}
+
+#pig {
+	position: absolute;
+	display: none;
+	top: -80%;
+	left: 30%;
+	z-index: 6;
+}
+
+#sun {
+	position: absolute;
+	top: 4%;
+	right: 8%;
+	z-index: 4;
+}

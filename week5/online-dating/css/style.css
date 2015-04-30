@@ -34,6 +34,7 @@ h4 {
 	min-height: 100%;
 }
 
+<<<<<<< HEAD
 /*.clearfix:after {
      visibility: hidden;
      display: block;
@@ -42,6 +43,8 @@ h4 {
      clear: both;
      height: 0;
 }*/
+=======
+>>>>>>> origin/master
 
 #header {
 	background-color: #333333;
@@ -67,11 +70,14 @@ h4 {
 	text-decoration: none;
 }
 
+<<<<<<< HEAD
 .maincontainter {
 	height: 100%;
 	overflow: auto;
 }
 
+=======
+>>>>>>> origin/master
 #main {
 	float: left;
 	background-color: white;
@@ -79,7 +85,10 @@ h4 {
 	width: 700px;
 	padding: 40px;
 	min-height: 100%;
+<<<<<<< HEAD
 	height: auto;
+=======
+>>>>>>> origin/master
 }
 
 
@@ -134,10 +143,14 @@ h4 {
 	font-size: 18px;
 }
 
+<<<<<<< HEAD
 /*#gallery img {
 	max-height: 180px;
 	padding: 20px;
 }*/
+=======
+/*sidebar*/
+>>>>>>> origin/master
 
 #sidebar {
 	float: right;
@@ -146,8 +159,11 @@ h4 {
 	width: 300px;
 	margin: 0 auto;
 	background-color: #2289c3;
+<<<<<<< HEAD
 	min-height: 100%;
 	height: auto;
+=======
+>>>>>>> origin/master
 }
 
 .button {
@@ -231,7 +247,10 @@ a.blockbutton {
 	border: 3px solid #0d5a85;
 	margin-left: 20px;
 	margin-top: 20px;
+<<<<<<< HEAD
 	/*position: absolute;*/
+=======
+>>>>>>> origin/master
 }
 
 figcaption {
@@ -249,6 +268,10 @@ figcaption {
 	color: black;
 }
 
+<<<<<<< HEAD
+=======
+/*toggle*/
+>>>>>>> origin/master
 
 #centeredmenu {
 	float: left;
@@ -296,7 +319,16 @@ figcaption {
 
 #gallery img {
 	max-height: 180px;
+<<<<<<< HEAD
 	padding: 20px;
+=======
+	margin: 20px;
+	opacity: 0.8;
+}
+
+#gallery img:hover {
+	opacity: 1;
+>>>>>>> origin/master
 }
 
 /*footer*/
