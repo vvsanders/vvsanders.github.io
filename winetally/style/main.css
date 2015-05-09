@@ -3,7 +3,7 @@ body {
 	color: black;
 	font-family: "Cardo", serif;
 	font-size: 20px;
-	min-height: 100%;
+	height: 100%;
 }
 
 #wrapper {
@@ -36,11 +36,12 @@ h3 {
 	letter-spacing: .1em;
 }
 
-h4,.oak {
+h4 {
 	font-size: .5em;
 	letter-spacing: .5em;
 	font-weight: normal;
 	color: #d1d2a1;
+	margin-bottom: 1.5em;
 }
 
 h5 {
@@ -55,15 +56,23 @@ h5 {
 }
 
 nav {
-	/*float: right;*/
-	/*width: 20%;*/
+	float: right;
 	transform: rotate(-90deg);
 	/*transform-origin: left top 10;*/
-	padding-right: 20px;
+	/*padding-bottom: 5%;*/
 	position: fixed;
 	right: 0;
 	top: 45%;
 	color: black;
+}
+
+.icon {
+	/*float: right;*/
+	width: 2%;
+	position: fixed;
+	right: 0;
+	padding-right: 4%;
+	bottom: 3%;
 }
 
 nav a {
@@ -75,6 +84,7 @@ nav a {
 	font-weight: normal;
 	color: black;
 	text-decoration: none;
+	bottom: 5%;
 }
 
 nav a:hover {
@@ -83,8 +93,7 @@ nav a:hover {
 }
 
 .title {
-	margin-top: 40px;
-	margin: 0 auto;
+	margin: 2em auto;
 	display: block;
 	padding-bottom: 4%;
 }
@@ -109,6 +118,7 @@ header a:hover {
 
 header a:visited {
 	color: black;
+	text-decoration: none;
 }
 
 
@@ -149,7 +159,7 @@ header a:visited {
 
 #foodlist li a:hover {
 	text-decoration: none;
-	color: #d1d2a1;
+	color: white;
 }
 
 
@@ -174,8 +184,12 @@ header a:visited {
 #description, #pairing p {
 	max-width: 60%;
 	text-align: center;
-	margin: 2% auto 4%;
+	margin: 0 auto;
 	line-height: 30px;
+}
+
+#description #pairing {
+	padding-bottom: 1em;
 }
 
 p span {
@@ -197,8 +211,9 @@ footer {
 }
 
 #about a {
-	font-size: 20px;
-	font-family: "Cardo", serif;
+	font-size: .8em;
+	font-family: 'Fjalla One', sans-serif;
+	text-transform: uppercase;
 	text-decoration: none;
 	color: black;
 }
@@ -210,10 +225,9 @@ footer {
 	background-color: #fff;
 }
 
-#share {
-	float: right;
+.whites {
+	display: none;
 }
-
 
 /*DETAIL PAGES*/
 
@@ -221,6 +235,7 @@ footer {
 	max-width: 80%;
 	margin: 5% auto;
 	text-align: center;
+	padding-bottom: 10em;
 }
 
 #detail {
@@ -228,8 +243,13 @@ footer {
 	width: 33%;
 }
 
+#pairing {
+	margin-top: 3em;
+}
+
 #detail ul {
 	padding: 1%;
+	/*margin-top: 1em;*/
 }
 
 #detail li {
@@ -243,6 +263,11 @@ footer {
 
 
 .oak {
+	font-family: "Fjalla One", serif;
+	text-transform: uppercase;
+	font-size: .5em;
+	letter-spacing: .5em;
+	font-weight: normal;
 	color: black;
 }
 
@@ -297,7 +322,6 @@ footer {
 	display: inline-block
 }
 
-
 /*----------------------------
 media queries
 ----------------------------*/
@@ -306,12 +330,12 @@ media queries
 	body {
 		padding: 0;
 	}
+
 	header {
 		position: absolute;
-		width: 100%;
+		float: left;
 		text-align: center;
-		margin: 0 auto;
-		padding-left: 0;
+		padding-left: 10;
 	}
 
 	h1 {
@@ -322,6 +346,10 @@ media queries
 
 	h2 {
 		font-size: 1em;
+	}
+
+	h5 {
+		font-size: 1.2em;
 	}
 
 	#about {
@@ -344,8 +372,16 @@ media queries
 		padding-bottom: 1.5em;
 	}
 
+	#description, #pairing p {
+		max-width: 86%;
+	}
+
+	#info {
+		padding-bottom: 1em;
+	}
+
 	#main {
-		margin-top: 2em;
+		margin-top: 5%;
 	}
 
 	#main ul {
@@ -359,23 +395,132 @@ media queries
 
 	#pairing,#detail {
 		float: none;
-		margin: 1.5em auto;
+		margin: 1.5em auto 3em auto;
+		width: 90%;
+	}
+
+	#pairing,#detail ul {
+		margin: 1em auto;
+
 	}
 
 	footer {
+		position: static;
 		width: 100%;
-		margin: 3em auto;
+		margin: 1.5em auto;
 	}
 
 	#about {
 		float: none;
-		position: static;
-		bottom: 1em;
+		position: relative;
+		bottom: 5;
 		text-align: center;
 	}
 	#about p {
 		float: none;
 		display: block;
 		font-size: .75em;
+		margin-top: .75em; 
+	}
+
+	#foodlist {
+		font-size: .5em;
+		margin: 5% auto;
+	}
+
+	nav {
+		position: absolute;
+		float: right;
+		transform: none;
+		top: 0;
+		padding-top: 1em;
+		padding-right: 5%;
+	}
+
+	.break {
+		display: block;
+		margin-top: 2.5em;
+		margin-bottom: .75em;
+	}
+
+	.icon {
+		clear: both;
+		width: 5%;
+		margin: 3% auto;
+		padding-right: 0;
+		display: block;
+		position: relative;
+	}
+
+	#main .sparkling a {
+		color: #dddcc2;
+	}
+
+	#main .drywhite a {
+		color: #dedfa3;
+	}
+
+	#main .sweet a {
+		color: #eed47b;
+	}
+
+	#main .richwhite a {
+		color: #fbcf69;
+	}
+
+	#main .rose a {
+		color: #ffb6cb;
+	}
+
+	#main .lightred a {
+		color: #b51d39;
+	}
+
+	#main .mediumred a {
+		color: #7d0c2a;
+	}
+
+	#main .boldred a {
+		color: #430725;
+	}
+
+	#main .dessert a {
+		color: #db7752;
+	}
+
+	#foodlist .sparkling a {
+		color: #dddcc2;
+	}
+
+	#foodlist .drywhite a {
+		color: #dedfa3;
+	}
+
+	#foodlist .sweet a {
+		color: #eed47b;
+	}
+
+	#foodlist .richwhite a {
+		color: #fbcf69;
+	}
+
+	#foodlist .rose a {
+		color: #ffb6cb;
+	}
+
+	#foodlist .lightred a {
+		color: #b51d39;
+	}
+
+	#foodlist .mediumred a {
+		color: #7d0c2a;
+	}
+
+	#foodlist .boldred a {
+		color: #430725;
+	}
+
+	#foodlist .dessert a {
+		color: #db7752;
 	}
 }
